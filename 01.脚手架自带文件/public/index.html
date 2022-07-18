@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <!--%PUBLIC_URL% 代表 public 文件夹的路径  --> 
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <!-- 用于开启理想视口，用于移动端的适配 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- 用于配置浏览器页签和地址栏的背景色（仅支持安卓手机浏览器  -->
+    <meta name="theme-color" content="#000000" />
+    <!--  对网页的简介 -->
+    <meta name="description" 
+      content="Web site created using create-react-app"
+    />
+    <!--  网站的logo 就是苹果手机中 网页被添加到主屏时候的快捷方式图标 ， 只支持苹果手机-->
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <!-- app 应用可以添加应用加壳，按照手机屏幕写页面，然后加个壳，就会变成手机应用， 本质是壳里面加上了页面。 这样 web app 就穿上了客户端 app 的外套，可以客户端访问应用   -->
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    
+    <title>React App</title>
+  </head>
+  <body>
+    <!-- 当浏览器不支持 JS 脚本语言时候，这个标签内的报警信息就会出现； -->
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <!--  #root div 相当于一个大容器，以后所有的组件都放进这个容器 -->
+    <div id="root"></div>
+    
+  </body>
+</html>
