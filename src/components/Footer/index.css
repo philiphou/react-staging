@@ -4,6 +4,7 @@
 span{
     display: inline-block;
     width: 280px;
+    margin-left:15px;
 }
 .btnn{
     background-color: rgb(255, 0, 106);
