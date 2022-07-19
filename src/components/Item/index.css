@@ -1,0 +1,23 @@
+
+li{
+
+    list-style-type: none;
+    display: inline-block;
+    margin-left:-10px;
+    margin-bottom: 10px;
+    height: 30px;
+
+}
+.todoTitle{
+    display: inline-block;
+    width: 330px;
+
+
+}
+.btn{
+    background-color: rgb(255, 0, 119);
+    display: inline-block;
+    font-size: 15px;
+    color: white;
+    height: 30px;
+}

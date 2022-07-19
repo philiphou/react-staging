@@ -1,0 +1,14 @@
+.foot{
+    margin-left: 30px;
+}
+span{
+    display: inline-block;
+    width: 280px;
+}
+.btnn{
+    background-color: rgb(255, 0, 106);
+    color:white;
+    font-size: 15px;
+    border-radius: 2%;
+    height: 30px;
+}

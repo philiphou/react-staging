@@ -1,4 +1,14 @@
-.Wrap{
-    width: 400px;
-    margin:20px auto;
+body{
+    font-size: 20px;
+}
+h1{
+    margin:0 150px;
+}
+.todoContainer{
+    width:500px;
+
+    margin: 200px auto;
+    padding: 10px;
+    border: solid grey 1px;
+    border-radius: 5%;
 }
