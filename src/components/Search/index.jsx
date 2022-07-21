@@ -53,7 +53,6 @@ class Search extends Component {
          }catch(error){
             console.log("出错了",error.message)
             PubSub.publish('ss',{err:error.message})
-
          }
        
 
