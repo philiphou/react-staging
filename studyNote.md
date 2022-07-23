@@ -113,3 +113,12 @@
                 <Route path='/test' component={Test}/>
                 <Redirect to="/home"/>
               </Switch>
+        - 二级嵌套路由
+            - 注册子路由时候要写上父路由的path值
+            - 路由的匹配是按照注册路由的顺序进行的
+        - 向路由组件传递数据：Ajax 发送参数方式： query, params, body {urlencoded, json}
+            - params 参数
+                路由链接： (携带参数) <Link to='/demo/test/tom/18'> 详情 </Link>
+                注册路由 （声明接收） <Route path="/demo/test/:name/:age" component={Test}/>
+                接收参数： const {name,age}=this.props.match.params
+            - 
