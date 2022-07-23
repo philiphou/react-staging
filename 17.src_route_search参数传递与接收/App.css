@@ -1,0 +1,13 @@
+.container{
+    margin:20px;
+}
+.panelA{
+    margin-left: 30px;
+    background-color: rgb(199, 189, 189);
+    width: 400px;
+    height: 400px;
+    padding: 20px;
+}
+.myactive{
+    background-color: yellowgreen;
+}

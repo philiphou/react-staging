@@ -121,4 +121,11 @@
                 路由链接： (携带参数) <Link to='/demo/test/tom/18'> 详情 </Link>
                 注册路由 （声明接收） <Route path="/demo/test/:name/:age" component={Test}/>
                 接收参数： const {name,age}=this.props.match.params
-            - 
+            - search 参数
+                urlencoded 编码形式： key=value&key=value
+                import qs from 'queringstring' 引入这个库
+                将urlencoded 编码形式与对象的键值对形式实现相互转换： 
+                    -- qs.stringify(obj) 输出 urlencoded 形式
+                    -- qs.parse(string) 输出 obj 对象模式
+
+
