@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import {NavLink,Route,Switch,Redirect} from 'react-router-dom'
+import {NavLink,Route,Switch} from 'react-router-dom'
 import About from './pages/About'
 import Home from './pages/Home'
 import Header from './component/Header'
@@ -26,9 +26,9 @@ export default class App extends Component {
               {/* <a className='list-group-item' href="./about.html">About</a>
               <a className='list-group-item' href="./home.html">Home</a> */}
              <NavLink activeClassName="myactive" className = 'list-group-item '  to="/about">About</NavLink>
-              <NavLink className = 'list-group-item' to="/home">Home</NavLink>
+              <NavLink className = 'list-group-item' to="/home/liyi">Home</NavLink>
               {/* 标签体内容是一个特殊的props 属性，叫children */}
-              <MyNavLink to="/test">Test</MyNavLink>
+              <MyNavLink to="/test/a">Test</MyNavLink>
 
           </div>
         </div>
@@ -38,11 +38,11 @@ export default class App extends Component {
               {/*  注册路由*/}
                <Switch>
                <Route path='/about' component={About}/>
-                <Route path='/home' component={Home}/>
-                <Route path='/test' component={Test}/>
-                <Redirect to="/home"/>
+                <Route exact = {true} path='/home' component={Home}/>
+                <Route exact path='/test' component={Test}/> 
+               </Switch>
 
-              </Switch>
+              
              </div>
           </div>
         </div>

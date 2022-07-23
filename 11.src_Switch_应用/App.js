@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import {NavLink,Route,Switch,Redirect} from 'react-router-dom'
+import {NavLink,Route,Switch} from 'react-router-dom'
 import About from './pages/About'
 import Home from './pages/Home'
 import Header from './component/Header'
@@ -28,7 +28,7 @@ export default class App extends Component {
              <NavLink activeClassName="myactive" className = 'list-group-item '  to="/about">About</NavLink>
               <NavLink className = 'list-group-item' to="/home">Home</NavLink>
               {/* 标签体内容是一个特殊的props 属性，叫children */}
-              <MyNavLink to="/test">Test</MyNavLink>
+              <MyNavLink to="./test">Test</MyNavLink>
 
           </div>
         </div>
@@ -39,10 +39,10 @@ export default class App extends Component {
                <Switch>
                <Route path='/about' component={About}/>
                 <Route path='/home' component={Home}/>
-                <Route path='/test' component={Test}/>
-                <Redirect to="/home"/>
+                <Route path='/home' component={Test}/> 
+               </Switch>
 
-              </Switch>
+              
              </div>
           </div>
         </div>
