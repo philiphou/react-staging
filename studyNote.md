@@ -1,4 +1,4 @@
-# ================ React 学习笔记 ================
+# ================ React 脚手架学习笔记 ================
 - 消息订阅与发布机制：
     1. 工具库 PubSubJS
     2. 下载： npm install pubsub-js --save
@@ -127,5 +127,26 @@
                 将urlencoded 编码形式与对象的键值对形式实现相互转换： 
                     -- qs.stringify(obj) 输出 urlencoded 形式
                     -- qs.parse(string) 输出 obj 对象模式
+                路由链接（携带参数）：
+                    <Link to='/demo/test?name=tom&age=18/'>详情</Link>
+                注册路由（无需声明，正常注册即可）：
+                    <Route path='/demo/test' component={Test}/>
+                接收参数：
+                    this.props.location.search
+                备注： 获取到的search 是 urlencoded 编码字符串，需要借助 querystring 解析
+            - state 参数:
+                  路由链接（携带参数）：
+                    <Link to={{pathname:'/demo/test',state:{name:tom,age:18}}}>详情</Link>
+                注册路由（无需声明，正常注册即可）：
+                    <Route path='/demo/test' component={Test}/>
+                接收参数：
+                    this.props.location.state
+                备注：刷新也可以保留住参数，因为浏览器维护着 history API
+            - 路由跳转的模式： push 和 replace
+
+
+
+
+                
 
 
