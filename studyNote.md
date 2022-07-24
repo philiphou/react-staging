@@ -150,6 +150,24 @@
             - 如果是用state形式往路由里面传参数，则可以把state 对象作为第二个参数传入API：
             - this.props.history.push(path,state) 
             - this.props.history 还有两个api: goBack, goForward;go; 其中 go(n) 传入一个整数n, 传2 表示前进2步，传 -2 表示后退2步
+        - withRouter 的使用: 
+            - withRouter 可以让一般组件拥有路由组件的props 属性，例如 history, match 等，这样就可以利用路由组建属性方法API
+            - import {withRouter} from 'react-router-dom'
+            - export default withRouter(Demo) 
+            - withRouter的返回值是一个新组件，绑定了路由组件的属性;
+        - BrowserRouter 和 HashRouter
+            - 底层原理不一样：
+                BrowserRouter 使用的是H5的History API， 不兼容 IE9 及以下版本
+                HashRouter 使用的是URL 的哈希值
+            - url 表现形式不一样
+                BrowserRouter的路径中没有 # ， 例如： localhost:3000/demo/test
+                HashRouter的路径中包含 #： 例如： localhost:3000/#/demo/test
+            - 刷新后对路由state参数的影响
+                BrowserRouter 没有任何影响，因为state保存在history对象中
+                HashRouter 刷新后会导致路由state参数的丢失
+            - HashRouter 可以用于解决一些路径错误相关的问题
+- antd 的基本使用
+    - 
 
 
 
