@@ -142,7 +142,16 @@
                 接收参数：
                     this.props.location.state
                 备注：刷新也可以保留住参数，因为浏览器维护着 history API
-            - 路由跳转的模式： push 和 replace
+            - 路由跳转的模式： push 和 replace; 默认是push 压栈模式，可以后退； 如果用replace 则是无痕模式： 
+                    <MyNavLink replace to="/test">Test</MyNavLink>
+        - 编程式路由导航跳转，运用理由组件里的props 里的 history属性，该属性有两个方法： push 和 replace  参数为path ，运用实现路由跳转： 
+            - this.props.history.replace(`/demo/detail/${id}/${title}`)
+            - this.props.history.push(`/demo/detail/${id}/${title}`)
+            - 如果是用state形式往路由里面传参数，则可以把state 对象作为第二个参数传入API：
+            - this.props.history.push(path,state) 
+            - this.props.history 还有两个api: goBack, goForward;go; 其中 go(n) 传入一个整数n, 传2 表示前进2步，传 -2 表示后退2步
+
+
 
 
 

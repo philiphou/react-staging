@@ -25,10 +25,10 @@ export default class App extends Component {
           <div className='list-group'>
               {/* <a className='list-group-item' href="./about.html">About</a>
               <a className='list-group-item' href="./home.html">Home</a> */}
-             <NavLink activeClassName="myactive" className = 'list-group-item '  to="/about">About</NavLink>
-              <NavLink className = 'list-group-item' to="/home">Home</NavLink>
+             <NavLink  replace activeClassName="myactive" className = 'list-group-item '  to="/about">About</NavLink>
+              <NavLink  replace className = 'list-group-item' to="/home">Home</NavLink>
               {/* 标签体内容是一个特殊的props 属性，叫children */}
-              <MyNavLink  to="/test">Test</MyNavLink>
+              <MyNavLink replace to="/test">Test</MyNavLink>
 
           </div>
         </div>
